@@ -12,22 +12,18 @@ import views.html.*;
 
 public class Application extends Controller {
 
-
-    private final ElasticSearchService es;
+    private ElasticSearchService es;
 
     @Inject
     public Application(ElasticSearchService es) {
         this.es = es;
     }
 
-
     public Result index() {
         return ok("No service here.");
     }
 
     public Promise<Result> addNotification() {
-
-
         JsonNode json = request().body().asJson();
         if(json == null) {
             return  Promise.<Result>pure(badRequest("Expecting Json data"));

@@ -16,7 +16,6 @@ import static play.mvc.Results.ok;
 
 public class RealElasticSearchService implements ElasticSearchService {
 
-
   private String esUrl = Play.application().configuration().getString("elasticSearch.url");
   private String esIndex = Play.application().configuration().getString("elasticSearch.index");
   private String esType = Play.application().configuration().getString("elasticSearch.type");
