@@ -14,7 +14,7 @@ import javax.inject.Inject;
 import static play.mvc.Results.ok;
 
 
-public class RealElasticSearchService implements ElasticSearchService {
+public class ElasticSearchService implements SearchService {
 
   private String esUrl = Play.application().configuration().getString("elasticSearch.url");
   private String esIndex = Play.application().configuration().getString("elasticSearch.index");

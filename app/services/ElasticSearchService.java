@@ -8,7 +8,7 @@ import play.mvc.Result;
 
 
 @ImplementedBy(RealElasticSearchService.class)
-public interface ElasticSearchService {
+public interface SearchService {
 
   public Promise<Result> save(JsonNode json);
 
