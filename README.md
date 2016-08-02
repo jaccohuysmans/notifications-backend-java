@@ -6,7 +6,7 @@ This backend is part of the Notifications project. Read more about that [HERE](h
 
 ###Notes
 - The application makes use of the [Play web application framework](https://www.playframework.com/) (In order to locally run your server you either need to install SBT or Activator).
-- Notifications are made persistent using ElasticSearch. The application expects a server to be available at the url defined in the application.properties
+- Notifications are made persistent using ElasticSearch. The application expects a server to be available at the url defined in the application.conf
 - There are two endpoints defined in the routes file. One for adding a notification and one for retrieving a list of stored notifications. Both endpoints are publicly accessible, no form of authentication is implemented.
 
 
